@@ -1,0 +1,130 @@
+.similar__form {
+    max-width: 600px;
+    min-width: 600px;
+}
+
+.form__padding {
+    padding: 40px 45px;
+}
+
+.text-green {
+    color: var(--rts-primary) !important;
+}
+button{
+    border: 0;
+    background: transparent;
+}
+
+.has__line::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--rts-border);
+    bottom: 12px;
+    left: 0;
+    z-index: 1;
+}
+
+.has__line p {
+    color: var(--rts-para);
+    max-width: max-content;
+    margin: 0 auto;
+    padding: 0 12px;
+    font-weight: 500;
+    position: relative;
+    z-index: 2;
+    background-color: var(--rts-white);
+}
+
+.tab__switch {
+    display: flex;
+    gap: 30px;
+}
+
+.tab__switch .rts__btn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 16px 30px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: var(--rts-gray);
+    color: var(--rts-para);
+    justify-content: center;
+}
+
+.tab__switch .rts__btn.active {
+    background-color: var(--rts-primary);
+    color: var(--rts-white);
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+
+.similar__form input:not([type=checkbox]) {
+    border: 1px solid var(--rts-border);
+    padding: 15px 20px 15px 45px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.similar__modal .modal-dialog {
+    min-width: 600px;
+    border-radius: 16px;
+    
+}
+
+.similar__form i.icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.text-para {
+    color: var(--rts-para);
+}
+
+.text-para:hover {
+    color: var(--rts-para);
+}
+
+.form-group .rts__btn {
+    padding: 18px 0;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.has__line {
+    position: relative;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.is__social button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 15px 20px;
+    border-radius: 4px;
+    background-color: var(--rts-gray);
+    width: 100%;
+    font-size: 16px;
+    color: var(--rts-para);
+    transition: var(--transition);
+}
+
+.is__social button:hover {
+    background-color: var(--rts-primary);
+    color: var(--rts-white);
+}

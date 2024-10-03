@@ -1,0 +1,42 @@
+.offcanvas {
+    padding: 30px;
+}
+
+.mean-bar {
+    padding: 4px 0;
+    background: transparent;
+}
+
+.mean-container .mean-bar .mean-nav ul.list-unstyled {
+    display: block !important;
+}
+.mean-container .mean-bar .mean-nav .navigation__menu--item {
+    margin: 0;
+}
+.mean-expand {
+    width: 60px;
+    height: auto;
+    border: unset;
+    background: unset;
+    font-weight: normal;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.mean-container .mean-nav ul li a {
+    border-color: rgba(125, 128, 135, 0.3);
+    padding: 10px 15px;
+    text-transform: capitalize;
+    color: var(--rts-heading);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.rts__social a {
+    display: inline-block;
+    font-size: 20px;
+    color: var(--rts-para);
+    transition: var(--transition);
+}

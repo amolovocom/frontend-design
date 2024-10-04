@@ -195,24 +195,3 @@
       </form>
     </div>
  </div>
-
-
- <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    const niceSelects = document.querySelectorAll('.nice-select');
-
-    niceSelects.forEach(niceSelect => {
-        niceSelect.addEventListener('click', function() {
-            // Close any open dropdowns
-            niceSelects.forEach(select => {
-                if (select !== niceSelect) {
-                    select.classList.remove('open');
-                }
-            });
-
-            // Toggle the current dropdown
-            niceSelect.classList.toggle('open');
-        });
-    });
-});
-</script>

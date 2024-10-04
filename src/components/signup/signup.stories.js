@@ -5,5 +5,5 @@ export default {
   title: "Components/signup",
   parameters: { layout: "centered" },
 };
-
-export const signupView= () => signupBox;
+console.log(signupBox)
+export const signupView= () =>`${signupBox} `;

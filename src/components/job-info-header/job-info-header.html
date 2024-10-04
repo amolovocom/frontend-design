@@ -17,28 +17,8 @@
             </div>
         </form>
         <div class="d-flex align-items-center gap-3" id="nav-tab" role="tablist">
-            <button class="rts__btn no__fill__btn grid-style nav-link" data-bs-toggle="tab" data-bs-target="#grid" aria-selected="true" role="tab"> <i class="fa-solid fa-border-all"></i> Grid</button>
-            <button class="rts__btn no__fill__btn list-style nav-link active" data-bs-toggle="tab" data-bs-target="#list" aria-selected="false" role="tab" tabindex="-1"> <i class="fa-solid fa-list"></i> List</button>
+            <button class="rts__btn no__fill__btn grid-style nav-link active" data-bs-toggle="tab" data-bs-target="#grid" aria-selected="true" role="tab"> <i class="fa-solid fa-border-all"></i> Grid</button>
+            <button class="rts__btn no__fill__btn list-style nav-link" data-bs-toggle="tab" data-bs-target="#list" aria-selected="false" role="tab" tabindex="-1"> <i class="fa-solid fa-list"></i> List</button>
         </div>
     </div>
 </div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-    const niceSelects = document.querySelectorAll('.nice-select');
-
-    niceSelects.forEach(niceSelect => {
-        niceSelect.addEventListener('click', function() {
-            // Close any open dropdowns
-            niceSelects.forEach(select => {
-                if (select !== niceSelect) {
-                    select.classList.remove('open');
-                }
-            });
-
-            // Toggle the current dropdown
-            niceSelect.classList.toggle('open');
-        });
-    });
-});
-</script>

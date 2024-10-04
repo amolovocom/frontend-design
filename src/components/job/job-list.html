@@ -69,3 +69,26 @@
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const gridButton = document.querySelector('.grid-style');
+    const listButton = document.querySelector('.list-style');
+    const gridView = document.getElementById('grid');
+    const listView = document.getElementById('list');
+
+    gridButton.addEventListener('click', function() {
+        gridView.classList.add('active', 'show');
+        listView.classList.remove('active', 'show');
+        gridButton.classList.add('active');
+        listButton.classList.remove('active');
+    });
+
+    listButton.addEventListener('click', function() {
+        listView.classList.add('active', 'show');
+        gridView.classList.remove('active', 'show');
+        listButton.classList.add('active');
+        gridButton.classList.remove('active');
+    });
+});
+</script>

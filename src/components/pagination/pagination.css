@@ -1,7 +1,4 @@
-.mx-auto {
-    margin-right: auto;
-    margin-left: auto;
-}
+
 
 .pt-60 {
     padding-top: 60px;
@@ -14,6 +11,10 @@
 
 ul {
     list-style: none;
+}
+
+.max-content {
+    max-width: max-content;
 }
 
 .rts__pagination li a {

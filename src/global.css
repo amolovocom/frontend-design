@@ -73,6 +73,12 @@ img {
   vertical-align: middle;
   height: auto;
 }
+
+.section__padding {
+  padding-top: 110px;
+  padding-bottom: 120px;
+}
+
 span{
   font-size: inherit;
 }
@@ -250,8 +256,8 @@ button{
 
 @media screen and (max-width: 1200px) {
     .rts__menu__background {
-        padding: 0 20px;
-        border-radius: 0;
+        padding: 0 20px !important;
+        border-radius: 0 !important;
     }
 
     .navigation__menu--item {
@@ -262,21 +268,25 @@ button{
 
 @media screen and (max-width: 992px) {
     .rts__menu__background {
-        padding: 20px 15px;
-        border-radius: 0;
+        padding: 20px 15px !important;
+        border-radius: 0 !important;
     }
 
     .breadcrumb__background {
-        min-height: 100%;
+        min-height: 100% !important;
     }
 
     .breadcrumb__padding {
-        padding: 150px 0 130px;
+        padding: 150px 0 130px !important;
     }
 
     .breadcrumb-title {
         font-size: 40px !important;
     }
+
+    .breadcrumb__area__shape {
+      right: 0 !important;
+  }
 
     .breadcrumb__area__shape .shape__one {
         display: none;
@@ -326,8 +336,8 @@ button{
         display: none;
     }
 
-    .rts__job__card__big .company__icon{
-      display: none;
+    .rts__job__card__big .company__icon,.rts__job__card__list .company__icon{
+      display: none !important;
     }
 
 }
@@ -335,11 +345,11 @@ button{
 
 @media screen and (max-width: 768px) {
     .breadcrumb__area {
-        margin: 0 auto;
+        margin: 0 auto !important;
     }
 
     .breadcrumb__padding {
-        padding: 150px 0 80px;
+        padding: 150px 0 80px !important;
     }
 
     .breadcrumb-title {

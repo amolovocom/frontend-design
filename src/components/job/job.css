@@ -6,7 +6,7 @@
   transition: var(--transition);
 }
 
-.company__icon {
+.rts__job__card .company__icon {
   height: 60px;
   width: 60px;
   display: grid;

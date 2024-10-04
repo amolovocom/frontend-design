@@ -34,9 +34,9 @@
                    </nav>
                 </div>
                 <div class="header__right__btn d-flex gap-3">
-                    <a href="#" class="small__btn d-none d-sm-flex no__fill__btn border-6 font-xs align-items-center justify-content-center gap-3" aria-label="Login Button" data-bs-toggle="modal" data-bs-target="#loginModal"> <i class="fa-solid fa-arrow-right-to-bracket"></i>Sign In</a>
+                    <a href="#" id= "signInButton" class="small__btn d-none d-sm-flex no__fill__btn border-6 font-xs align-items-center justify-content-center gap-3" aria-label="Login Button" data-bs-toggle="modal" data-bs-target="#loginModal"> <i class="fa-solid fa-arrow-right-to-bracket"></i>Sign In</a>
                     <a href="employer-dash-jobpost.html" class="small__btn d-none d-sm-flex d-xl-flex fill__btn border-6 font-xs align-items-center justify-content-center gap-3" aria-label="Job Posting Button">Add Job</a>
-                    <button class="d-md-block d-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas"><i class="fa-solid fa-bars"></i></button>
+                    <button class="d-md-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas"><i class="fa-solid fa-bars"></i></button>
                 </div>
                 
              </div>
@@ -45,3 +45,59 @@
        </div>
     </div>
  </header>
+ <script>
+   window.addEventListener('scroll', function() {
+    const header = document.querySelector('.rts__header');
+    if (window.scrollY > 100) {
+        header.classList.add('sticky');
+    } else {
+        header.classList.remove('sticky');
+    }
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the references to the bars button and the offcanvas menu
+    var barsButton = document.querySelector('[data-bs-target="#offcanvas"]');
+    var offcanvasMenu = document.getElementById("offcanvas");
+    var closeButton = offcanvasMenu.querySelector(".btn-close");
+
+    // Event listener to show the offcanvas when the bars button is clicked
+    barsButton.addEventListener("click", function () {
+      // Show the offcanvas menu
+      offcanvasMenu.style.display = "block";
+      offcanvasMenu.classList.add("show");
+      offcanvasMenu.style.visibility = "visible"; // Ensure it's visible
+    });
+
+    // Event listener to close the offcanvas when the close button is clicked
+    closeButton.addEventListener("click", function () {
+      offcanvasMenu.style.display = "none";
+      offcanvasMenu.classList.remove("show");
+      offcanvasMenu.style.visibility = "hidden";
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById("signInButton").addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent the default action
+    var loginModal = document.getElementById("loginModal");
+
+    // Show the modal by updating the styles
+    loginModal.style.display = "block";
+   //  loginModal.style.paddingRight = "17px";
+
+    // Add Bootstrap's `show` class to display the modal correctly
+    loginModal.classList.add("show");
+
+    // Optional: Add an event listener to the close button to hide the modal again
+    var closeButton = loginModal.querySelector('[data-bs-dismiss="modal"]');
+    closeButton.addEventListener("click", function () {
+      loginModal.style.display = "none";
+      loginModal.style.paddingRight = "";
+      loginModal.classList.remove("show");
+    });
+  });
+});
+
+ </script>

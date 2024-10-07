@@ -27,14 +27,7 @@
     color: var(--rts-button-1);
 }
 
-.breadcrumb__area__shape {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  right: 10%;
-  top: 60%;
-  transform: translate(0, -50%);
-}
+
 
 .breadcrumb__area__shape .shape__one {
   right: 25%;

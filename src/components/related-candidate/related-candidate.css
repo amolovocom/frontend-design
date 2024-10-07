@@ -1,0 +1,59 @@
+.pb-120 {
+    padding-bottom: 120px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.rts__author__card__big .author__icon.small__thumb img {
+    height: 60px;
+    min-width: 60px;
+    border-radius: 6px;
+}
+
+
+
+.rts__author__card__big {
+    row-gap: 1rem !important;
+    column-gap: 2.5rem !important;
+}
+
+.style__gradient__two.rts__author__card__big .job__meta i {
+    color: var(--rts-heading);
+}
+
+.rts__author__card__big {
+    border: 1px solid #DCDDDF;
+    box-shadow: unset !important;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.rts__author__card__big .job__tags a {
+    border-radius: 6px;
+    background-color: var(--rts-gray);
+    padding: 5px 10px;
+    background-color: var(--rts-gray);
+    font-weight: 500;
+    color: var(--rts-para);
+    line-height: 1.2;
+    text-transform: capitalize;
+    transition: var(--transition);
+    border: 1px solid #F1F1F1;
+    font-size: 16px;
+}
+
+.rts__author__card__big .job__tags a:hover{
+    background-color: var(--rts-white);
+    color: var(--rts-heading);
+}
+
+.style__gradient__two.rts__author__card__big:hover .apply__btn{
+    background-color: var(--rts-button-1);
+    color: var(--rts-white);
+}
+
+.style__gradient__two.rts__author__card__big:hover .job__tags a{
+    background-color: var(--rts-white);
+}

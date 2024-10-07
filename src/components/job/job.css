@@ -16,7 +16,7 @@
   transition: var(--transition);
 }
 
-.job__title{
+.rts__job__card .job__title{
   font-size: var(--h6);
   line-height: 30px;
   color: var(--rts-heading);
@@ -35,7 +35,7 @@ p {
   text-decoration: none;
 }
 
-.job__tags a {
+.rts__job__card  .job__tags a {
   padding: 8px 12px;
   border-radius: 6px;
   background-color: var(--rts-gray);
@@ -48,7 +48,7 @@ p {
   text-decoration: none;
 }
 
-.job__tags a:hover {
+.rts__job__card.job__tags a:hover {
   color: var(--rts-heading);
   background-color: var(--rts-button-3);
 }
@@ -89,6 +89,20 @@ p {
   font-size: 20px;
   transition: var(--transition);
   border: none;
+}
+
+.rts__job__card__list .job__meta .job__tags a{
+  border: 1px solid #F1F1F1;
+  border-radius: 25px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: var(--rts-para);
+    line-height: 1.2;
+    text-transform: capitalize;
+    transition: var(--transition);
+    border: 1px solid #F1F1F1;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 

@@ -1,0 +1,60 @@
+.author__icon img {
+    height: 122px;
+    min-width: 122px;
+    border-radius: 10px;
+}
+
+h3, .h3 {
+    font-size: var(--h3);
+    line-height: 58px;
+    color: var(--rts-heading);
+    font-weight: 700;
+}
+
+.breadcrumb__area .rts__job__card__big .job__tags a{
+    background-color: var(--rts-white);
+}
+
+.rts__job__card__big .job__tags a{
+    padding: 5px 14px;
+    border-radius: 6px;
+    background-color: transparent;
+    color: var(--rts-para);
+    line-height: 1.2;
+    text-transform: capitalize;
+    transition: var(--transition);
+    border: 1px solid #F1F1F1;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.breadcrumb__area .breadcrumb__apply {
+    position: absolute;
+    right: 0;
+    top: 52%;
+}
+
+.breadcrumb__area .apply__btn.no__fill__btn {
+    color: var(--rts-heading);
+    background-color: transparent;
+}
+
+.breadcrumb__area .apply__btn {
+    color: var(--rts-white);
+    font-weight: 500;
+    padding: 20px 30px;
+    position: relative;
+    z-index: 1;
+    border-radius: 6px;
+}
+
+.breadcrumb__area .rts__job__card__big .job__tags a:hover {
+    color: var(--rts-white);
+    background-color: var(--rts-button-3);
+}
+
+.breadcrumb__area .apply__btn.no__fill__btn:hover {
+    color: var(--rts-white);
+    background-color: var(--rts-button-1);
+    border-color: var(--rts-button-1);
+}

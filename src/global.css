@@ -74,6 +74,14 @@ img {
   height: auto;
 }
 
+.breadcrumb__background {
+  background-image: url(https://html.themewant.com/jobpath/template/assets/img/breadcrumb/breadcrumb.png);
+  min-height: 450px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .breadcrumb__area__shape {
   height: 100%;
   width: 100%;
@@ -102,6 +110,24 @@ span{
   background-color: var(--rts-button-1);
   color: var(--rts-white) !important;
   border-color: var(--rts-button-1);
+}
+
+.fill__btn {
+  background-color: var(--rts-primary);
+  border: 1px solid ;
+  color: var(--rts-white);
+}
+
+.no__fill__btn:hover {
+  background-color: var(--rts-button-3);
+  border-color: var(--rts-button-3);
+  color: var(--rts-white);
+}
+
+.fill__btn:hover {
+  background-color:var(--rts-button-3);
+  border-color: var(--rts-button-3);
+  color: var(--rts-white);
 }
 
 .nice-select {

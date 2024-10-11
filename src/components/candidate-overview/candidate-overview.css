@@ -84,8 +84,6 @@
 .apply__btn {
     padding: 15px 18px;
     border-radius: 6px;
-    background-color: #F1F1F1;
-    color: var(--rts-heading);
     transition: var(--transition);
     line-height: 1.2;
 }

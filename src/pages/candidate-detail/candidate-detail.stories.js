@@ -5,6 +5,8 @@ import candidatebgVuew from "../../components/candidate-background/candidate-bac
 import candidateinfo from "../../components/candidate-info/candidate-info.html"
 import candidateoverview from "../../components/candidate-overview/candidate-overview.html"
 import relatedcandidate from "../../components/related-candidate/related-candidate.html"
+import footerimg from "../../components/footer-img/footer-img.html"
+import footer from "../../components/footer/footer.html"
 
 export default { title: "Pages/candidate-detail" };
 
@@ -20,4 +22,7 @@ ${candidatebgVuew}
     </div>
 </div>
 ${relatedcandidate}
+${footerimg}
+${footer}
+
 `

@@ -1,0 +1,72 @@
+.footer__home__one {
+    background-image: url(https://html.themewant.com/jobpath/template/assets/img/footer/footer__bg.png);
+}
+
+.pb-60 {
+    padding-bottom: 60px;
+}
+
+.pt-60 {
+    padding-top: 60px;
+}
+
+.max-320 {
+    max-width: 320px;
+}
+
+.rts__footer__widget ul li {
+    margin-bottom: 10px;
+}
+
+.rts__footer__widget ul li a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--rts--para);
+    font-size: 16px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.newsletter {
+    position: relative;
+    max-width: 310px;
+}
+
+.newsletter input {
+    position: relative;
+    padding: 20px 18px;
+    padding-right: 120px;
+    border-radius: 10px;
+    border: 0;
+    width: 100%;
+    outline: none;
+}
+
+.newsletter button {
+    position: absolute;
+    right: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.rts__footer__widget ul li a:hover {
+    color: var(--rts-primary);
+}
+
+.rts__footer__widget ul li a i {
+    color: var(--rts-primary);
+}
+
+.rts__copyright {
+    border-top: 1px solid rgba(125, 128, 135, 0.1);
+}
+
+.rts__footer__widget ul {
+    margin-bottom: 0;
+}
+
+.rts__copyright p{
+    margin-bottom: 0;
+}

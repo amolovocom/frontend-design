@@ -11,6 +11,8 @@ import loginmodal from "../../components/login/login.html"
 import signupmodal from "../../components/signup/signup.html"
 import forgotmodal from "../../components/forgotpassword/forgotpassword.html"
 import sidebar from "../../components/sidebar/sidebar.html"
+import footerimg from "../../components/footer-img/footer-img.html"
+import footer from "../../components/footer/footer.html"
 export default { title: "Pages/Welcome" };
 
 export const basic = () => ` 
@@ -37,6 +39,8 @@ ${header}
         </div>
     </div>
 </div>
+${footerimg}
+${footer}
 ${loginmodal}
 ${signupmodal}
 ${forgotmodal}

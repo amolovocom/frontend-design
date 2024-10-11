@@ -57,3 +57,8 @@
 .style__gradient__two.rts__author__card__big:hover .job__tags a{
     background-color: var(--rts-white);
 }
+
+.rts__author__card__big .apply__btn{
+    background-color: #F1F1F1;
+    color: var(--rts-heading);
+}

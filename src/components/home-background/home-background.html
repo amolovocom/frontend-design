@@ -11,45 +11,58 @@
         <div class="row">
             <div class="rts__banner__wrapper d-flex gap-4 justify-content-between ">
                 <div class="rts__banner__content">
-                    <h1 class="rts__banner__title wow  fadeInUp  animated" style="visibility: visible; animation-name: fadeInUp;">
-                        Find Your Perfect 
-                        Dream Job With 
+                    <h1 class="rts__banner__title wow  fadeInUp  animated"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        Find Your Perfect
+                        Dream Job With
                         <span>Jobpath</span>
                     </h1>
-                    <p class="rts__banner__desc my-40 wow  fadeInUp animated" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-                        Looking for a new job can be both exciting and daunting. Navigating the job market involves exploring various avenues, including online job boards.
+                    <p class="rts__banner__desc my-40 wow  fadeInUp animated" data-wow-delay=".1s"
+                        style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                        Looking for a new job can be both exciting and daunting. Navigating the job market involves
+                        exploring various avenues, including online job boards.
                     </p>
-                    <div class="rts__job__search wow  fadeInUp animated" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                        <form action="#" class="d-flex align-items-center flex-wrap flex-md-nowrap flex-lg-wrap flex-xl-nowrap gap-4 gap-xl-0 justify-content-between">
+                    <div class="rts__job__search wow  fadeInUp animated" data-wow-delay=".2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <form action="#"
+                            class="d-flex align-items-center flex-wrap flex-md-nowrap flex-lg-wrap flex-xl-nowrap gap-4 gap-xl-0 justify-content-between">
                             <div class="input-group flex-wrap d-flex gap-4">
                                 <div class="single__input d-flex flex-column">
                                     <label for="location">location</label>
-                                    <select name="location" class="select-nice" id="location" style="display: none;">
-                                        <option value="1">Select Location</option>
-                                        <option value="2">Dhaka</option>
-                                        <option value="3">Barisal</option>
-                                        <option value="4">Chittagong</option>
-                                    </select><div class="nice-select select-nice" tabindex="0"><span class="current">Select Location</span><ul class="list"><li data-value="1" class="option selected focus">Select Location</li><li data-value="2" class="option">Dhaka</li><li data-value="3" class="option">Barisal</li><li data-value="4" class="option">Chittagong</li></ul></div>
+                                    <div class="nice-select" tabindex="0" id="homeloc-drop">
+                                        <span class="current">Select Location</span>
+                                        <ul class="list">
+                                            <li data-value="1" class="option selected focus">Select Location</li>
+                                            <li data-value="2" class="option">Dhaka</li>
+                                            <li data-value="3" class="option">Barisal</li>
+                                            <li data-value="4" class="option">Chittagong</li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="vr d-none d-sm-block"></div>
                                 <div class="single__input d-flex flex-column">
                                     <label for="job__type">job type</label>
-                                    <select name="job__type" class="select-nice" id="job__type" style="display: none;">
-                                        <option value="1">Select Job Type</option>
-                                        <option value="2">Full Time</option>
-                                        <option value="3">Part Time</option>
-                                        <option value="4">Internship</option>
-                                    </select><div class="nice-select select-nice" tabindex="0"><span class="current">Select Job Type</span><ul class="list"><li data-value="1" class="option selected focus">Select Job Type</li><li data-value="2" class="option">Full Time</li><li data-value="3" class="option">Part Time</li><li data-value="4" class="option">Internship</li></ul></div>
+                                    <div class="nice-select" tabindex="0" id="jobtype-drop">
+                                        <span class="current">Select Job Type</span>
+                                        <ul class="list">
+                                            <li data-value="1" class="option selected focus">Select Job Type</li>
+                                            <li data-value="2" class="option">Full Time</li>
+                                            <li data-value="3" class="option">Part Time</li>
+                                            <li data-value="4" class="option">Internship</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <button type="submit" class="rts__btn gap-2 fill__btn job__search" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i> Search Job</button>
+                            <button type="submit" class="rts__btn gap-2 fill__btn job__search" aria-label="Search"><i
+                                    class="fa-solid fa-magnifying-glass"></i> Search Job</button>
 
                         </form>
                     </div>
                 </div>
                 <div class="rts__banner__image position-relative">
                     <figure class="banner__image">
-                        <img src="https://html.themewant.com/jobpath/template/assets/img/home-1/banner/image_2x.webp" alt="banner">
+                        <img src="https://html.themewant.com/jobpath/template/assets/img/home-1/banner/image_2x.webp"
+                            alt="banner">
                     </figure>
                     <div class="banner__image__shape">
                         <div class="facebook">
@@ -66,4 +79,27 @@
             </div>
         </div>
     </div>
- </section>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        function toggledropdown(e) {
+            const dropdown = document.getElementById(e.target.id)
+            console.log("aa", e.target.id)
+            if (dropdown.classList.contains("open")) {
+                dropdown.classList.remove("open")
+            } else {
+                dropdown.classList.add("open")
+            }
+        }
+
+        const jobtypedropdown = document.getElementById("jobtype-drop")
+
+        jobtypedropdown.addEventListener('click', toggledropdown)
+
+        const homelocdropdown = document.getElementById("homeloc-drop")
+
+        homelocdropdown.addEventListener('click', toggledropdown)
+    })
+
+</script>

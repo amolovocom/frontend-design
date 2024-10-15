@@ -6,4 +6,4 @@ export default {
   parameters: { layout: "centered" },
 };
 console.log(signupBox)
-export const signupView= () =>`${signupBox} `;
+export const signupView= () => signupBox;

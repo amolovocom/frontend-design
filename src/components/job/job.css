@@ -105,5 +105,9 @@ p {
     font-size: 16px;
 }
 
+.rts__job__card__list .job__meta .job__title{
+  font-weight: 700;
+}
+
 
 

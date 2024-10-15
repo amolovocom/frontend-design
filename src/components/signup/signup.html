@@ -59,64 +59,54 @@
 </div>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-    // Get references to the modals and the "Sign Up" link
+    
     var loginModal = document.getElementById("loginModal");
     var signupModal = document.getElementById("signupModal");
     var signupLink = document.getElementById("signupLink");
     var forgotModal = document.getElementById("forgotModal");
     var forgotPassLink = document.getElementById("forgotPasslink");
 
-    // Add a click event listener to the "Sign Up" link in the login modal
     signupLink.addEventListener("click", function (event) {
-      event.preventDefault(); // Prevent default anchor behavior
+      event.preventDefault(); 
 
-      // Hide the login modal and show the signup modal
       loginModal.style.display = "none";
       loginModal.classList.remove("show");
       
       signupModal.style.display = "block";
       signupModal.classList.add("show");
 
-      // Adjust padding for the signup modal
     //   signupModal.style.paddingRight = "17px";
     });
 
     forgotPassLink.addEventListener("click", function (event) {
-      event.preventDefault(); // Prevent default anchor behavior
+      event.preventDefault(); 
 
-      // Hide the login modal and show the signup modal
       loginModal.style.display = "none";
       loginModal.classList.remove("show");
       
       forgotModal.style.display = "block";
       forgotModal.classList.add("show");
 
-      // Adjust padding for the signup modal
     //   forgotModal.style.paddingRight = "17px";
     });
 
-    // Optional: Close the signup modal and show the login modal if needed
     var loginLinks = document.querySelectorAll(".loginLink");
     loginLinks.forEach(function (loginLink) {
       loginLink.addEventListener("click", function (event) {
         event.preventDefault();
 
-        // Hide any currently open modals
         signupModal.style.display = "none";
         forgotModal.style.display = "none";
         signupModal.classList.remove("show");
         forgotModal.classList.remove("show");
 
-        // Show the login modal
         loginModal.style.display = "block";
         loginModal.classList.add("show");
 
-        // Adjust padding for the login modal
         // loginModal.style.paddingRight = "17px";
       });
     });
 
-    // Close modal buttons functionality
     var closeButtons = document.querySelectorAll('[data-bs-dismiss="modal"]');
     closeButtons.forEach(function (button) {
       button.addEventListener("click", function () {

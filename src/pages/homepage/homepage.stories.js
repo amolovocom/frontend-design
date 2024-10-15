@@ -9,7 +9,7 @@ import footerimg from "../../components/footer-img/footer-img.html"
 import footer from "../../components/footer/footer.html"
 export default { title: "Pages/homepage" };
 
-export const candidateDetail = () => `
+export const homePage = () => `
 
 ${header}
 ${homebgVuew}

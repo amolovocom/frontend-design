@@ -28,6 +28,8 @@
     box-shadow: unset !important;
     padding: 30px;
     border-radius: 10px;
+    background: var(--rts-white);
+    position: relative;
 }
 
 .rts__author__card__big .job__tags a {

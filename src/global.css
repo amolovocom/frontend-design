@@ -186,8 +186,6 @@ span{
   opacity: 1;
   z-index: 10;
   pointer-events: auto;
-  -webkit-transform: scale(1) translateY(0);
-  -ms-transform: scale(1) translateY(0);
   transform: scale(1) translateY(0);
 }
 
@@ -230,6 +228,72 @@ a{
 
 #alert,#search,#gemail,#gphone,#gmessage{
   outline: 0;
+}
+
+.rts__job__card::before {
+  background: linear-gradient(228.34deg, #FEF2EB 0%, #F1F1F1 46.31%, #E4E0EA 100%);
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0;
+  border: 0;
+  transition: var(--transition);
+}
+
+.rts__job__card:hover {
+  border-color: transparent;
+}
+
+.rts__job__card:hover::before {
+  opacity: 1;
+}
+
+.rts__job__card:hover .company__icon {
+  background-color: var(--rts-white);
+}
+
+.rts__job__card .job__tags a:hover {
+  color: var(--rts-white);
+  background-color: var(--rts-button-1);
+}
+
+.rts__job__card__list.style__gradient::before,.style__gradient__two.rts__author__card__big::before{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: var(--transition);
+  z-index: -1;
+  background: linear-gradient(228.26deg, #FEF2EB 0%, #F1F1F1 46.25%, #E4E0EA 99.86%);
+  border-radius: 10px;
+}
+
+.rts__job__card__list.style__gradient:hover::before,.style__gradient__two.rts__author__card__big:hover::before{
+  opacity: 1;
+}
+
+.rts__job__card__list.style__gradient:hover,.style__gradient__two.rts__author__card__big:hover{
+  background: unset;
+}
+
+.rts__job__card__list.style__gradient:hover .bookmark__btn,.rts__job__card__list.style__gradient:hover .job__tags a{
+  background-color: var(--rts-white);
+}
+
+.rts__author__card__big:hover {
+  border-color: transparent;
+}
+
+.rts__job__card__list .job__tags a:hover {
+  background-color: var(--rts-white);
+  color: var(--rts-heading);
 }
 
 

@@ -1,5 +1,5 @@
-import "./welcome.css";
-import welcome from "./welcome.html";
+import "./candidate-filter-page.css";
+import welcome from "./candidate-filter-page.html";
 import header from "../../components/header/header.html"
 import bgVuew from "../../components/background/background.html"
 import candidatefilter from "../../components/candidate-filter/candidate-filter.html"
@@ -13,7 +13,7 @@ import forgotmodal from "../../components/forgotpassword/forgotpassword.html"
 import sidebar from "../../components/sidebar/sidebar.html"
 import footerimg from "../../components/footer-img/footer-img.html"
 import footer from "../../components/footer/footer.html"
-export default { title: "Pages/Welcome" };
+export default { title: "Pages/candidate-filter-page" };
 
 export const basic = () => ` 
 

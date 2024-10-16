@@ -80,26 +80,3 @@
         </div>
     </div>
 </section>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        function toggledropdown(e) {
-            const dropdown = document.getElementById(e.target.id)
-            console.log("aa", e.target.id)
-            if (dropdown.classList.contains("open")) {
-                dropdown.classList.remove("open")
-            } else {
-                dropdown.classList.add("open")
-            }
-        }
-
-        const jobtypedropdown = document.getElementById("jobtype-drop")
-
-        jobtypedropdown.addEventListener('click', toggledropdown)
-
-        const homelocdropdown = document.getElementById("homeloc-drop")
-
-        homelocdropdown.addEventListener('click', toggledropdown)
-    })
-
-</script>

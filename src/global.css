@@ -296,6 +296,11 @@ a{
   color: var(--rts-heading);
 }
 
+.rts__job__card__list.style__gradient:hover .job__tags a:hover{
+  background-color: var(--rts-white);
+  color: var(--rts-heading);
+}
+
 
 /* login - sign up - forgot pass */
 

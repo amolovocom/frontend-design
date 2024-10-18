@@ -1,0 +1,43 @@
+.breadcrumb__padding {
+    padding: 210px 0 130px;
+
+    .breadcrumb-title {
+      font-size: var(--h3);
+      color: var(--rts-heading);
+      line-height: 58px;
+      font-weight: 700;
+    }
+  
+  .breadcrumb li a {
+      color: var(--rts-para);
+      text-decoration: none;
+  }
+  
+  .breadcrumb li.active {
+      color: var(--rts-button-1);
+  }
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: "\f054" !important;
+    font-family: "Font Awesome 6 Free";
+    font-size: 14px;
+    font-weight: 600;
+    padding-right: 10px;
+    position: relative;
+    top: 3px;
+    color: var(--rts-button-1) !important;
+    float: left;
+    padding-right: .5rem;
+  }
+}
+
+.breadcrumb__area__shape .shape__one {
+  right: 25%;
+  position: absolute;
+}
+
+
+
+
+
+  

@@ -1,0 +1,34 @@
+.text-dark {
+    color: var(--rts-heading);
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.top__query .category-select {
+    min-width: 180px;
+}
+
+.top__query .category-select .nice-select .current {
+    color: var(--rts-heading);
+}
+
+.category-select .nice-select {
+    background-color: var(--rts-gray);
+    border: none;
+    padding: 0 50px 1px 20px;
+}
+
+.grid-style,.list-style {
+    padding: 10px 12px;
+    border-radius: 6px;
+    color: var(--rts-heading);
+    gap: 8px;
+    line-height: 1 !important;
+}
+
+
+
+
+

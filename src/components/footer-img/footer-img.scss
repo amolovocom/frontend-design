@@ -1,0 +1,43 @@
+.pb-120 {
+    padding-bottom: 120px;
+}
+
+.rts__appcenter {
+    background-color: var(--rts-button-1);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    max-height: 430px;
+
+    .rts__appcenter__shape {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+}
+
+.rts__appcenter .top-15px {
+    top: 15px;
+}
+
+.rts__appcenter .content__left {
+    padding-left: 120px;
+    padding-right: 80px;
+}
+
+.rts__appcenter .content__right {
+    padding: 90px 80px 90px 0;
+}
+.max-630 {
+    max-width: 630px;
+}
+
+.l--1 {
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}

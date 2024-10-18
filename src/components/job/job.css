@@ -5,7 +5,6 @@
   position: relative;
   transition: var(--transition);
 }
-
 .rts__job__card .company__icon {
   height: 60px;
   width: 60px;
@@ -15,27 +14,20 @@
   background-color: var(--rts-gray);
   transition: var(--transition);
 }
-
-.rts__job__card .job__title{
+.rts__job__card .job__title {
   font-size: var(--h6);
   line-height: 30px;
   color: var(--rts-heading);
-  font-weight: 700 ;
+  font-weight: 700;
   text-decoration: none;
 }
-
-p {
-  font-size: var(--p);
-}
-
-.job__title a {
+.rts__job__card .job__title a {
   color: var(--rts-heading);
   font-weight: 600;
   letter-spacing: -0.5px;
   text-decoration: none;
 }
-
-.rts__job__card  .job__tags a {
+.rts__job__card .job__tags a {
   padding: 8px 12px;
   border-radius: 6px;
   background-color: var(--rts-gray);
@@ -47,13 +39,24 @@ p {
   font-weight: 500;
   text-decoration: none;
 }
-
-.rts__job__card.job__tags a:hover {
+.rts__job__card .job__tags a:hover {
   color: var(--rts-heading);
   background-color: var(--rts-button-3);
 }
 
-.rts__job__card__list .company__icon{
+p {
+  font-size: var(--p);
+}
+
+.rts__job__card__list {
+  background-color: var(--rts-white);
+  border-radius: 10px;
+  padding: 30px;
+  background: var(--rts-white);
+  position: relative;
+  box-shadow: 0px 4px 40px rgba(166, 166, 166, 0.16);
+}
+.rts__job__card__list .company__icon {
   height: 120px;
   min-width: 120px;
   border-radius: 50%;
@@ -63,22 +66,27 @@ p {
   transition: var(--transition);
   align-items: center;
 }
-
-.rts__job__card__list{
-  background-color: var(--rts-white);
-  border-radius: 10px;
-  padding: 30px;
-  background: var(--rts-white);
-  position: relative;
-  box-shadow: 0px 4px 40px rgba(166, 166, 166, 0.16);
-}
-
-.rts__job__card__list .company__icon img{
+.rts__job__card__list .company__icon img {
   height: 65px;
   width: 65px;
 }
-
-.bookmark__btn {
+.rts__job__card__list .job__meta .job__title {
+  font-weight: 700;
+}
+.rts__job__card__list .job__tags a {
+  border: 1px solid #F1F1F1;
+  border-radius: 25px;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: var(--rts-para);
+  line-height: 1.2;
+  text-transform: capitalize;
+  transition: var(--transition);
+  border: 1px solid #F1F1F1;
+  font-weight: 500;
+  font-size: 16px;
+}
+.rts__job__card__list .bookmark__btn {
   height: 58px;
   width: 58px;
   display: grid;
@@ -89,25 +97,4 @@ p {
   font-size: 20px;
   transition: var(--transition);
   border: none;
-}
-
-.rts__job__card__list .job__meta .job__tags a{
-  border: 1px solid #F1F1F1;
-  border-radius: 25px;
-    padding: 5px 10px;
-    background-color: transparent;
-    color: var(--rts-para);
-    line-height: 1.2;
-    text-transform: capitalize;
-    transition: var(--transition);
-    border: 1px solid #F1F1F1;
-    font-weight: 500;
-    font-size: 16px;
-}
-
-.rts__job__card__list .job__meta .job__title{
-  font-weight: 700;
-}
-
-
-
+}/*# sourceMappingURL=job.css.map */

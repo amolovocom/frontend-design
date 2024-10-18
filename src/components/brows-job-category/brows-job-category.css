@@ -1,73 +1,76 @@
 .single__cat {
-    padding: 22px 30px;
-    border-radius: 10px;
-    background-color: var(--rts-white);
-    max-width: max-content;
-    min-width: 305px;
-    transition: var(--transition);
+  padding: 22px 30px;
+  border-radius: 10px;
+  background-color: var(--rts-white);
+  max-width: -moz-max-content;
+  max-width: max-content;
+  min-width: 305px;
+  transition: var(--transition);
 }
 
 .single__cat__icon {
-    height: 60px;
-    width: 60px;
-    display: grid;
-    place-items: center;
-    border-radius: 6px;
-    background-color: var(--rts-gray);
+  height: 60px;
+  width: 60px;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  background-color: var(--rts-gray);
 }
 
 .single__cat__link {
-    gap: 6px;
+  gap: 6px;
 }
 
 .single__cat__link a {
-    font-size: 24px;
-    color: var(--rts-heading);
-    font-weight: 600;
-    transition: var(--transition);
+  font-size: 24px;
+  color: var(--rts-heading);
+  font-weight: 600;
+  transition: var(--transition);
 }
 
 .single__cat__link span {
-    margin-top: 5px;
-    font-weight: 500;
-    line-height: 1;
+  margin-top: 5px;
+  font-weight: 500;
+  line-height: 1;
 }
 
 .cat__slider__bg {
-    position: relative;
-    background-color: var(--rts-gray);
-    background-image: url(https://html.themewant.com/jobpath/template/assets/img/home-1/cat/background.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  position: relative;
+  background-color: var(--rts-gray);
+  background-image: url(https://html.themewant.com/jobpath/template/assets/img/home-1/cat/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .pb-100 {
-    padding-bottom: 100px;
+  padding-bottom: 100px;
 }
+
 .pt-100 {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
 .mb-50 {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .mtn-1 {
-    margin-top: -10px;
+  margin-top: -10px;
 }
 
 .max-contnet {
-    max-width: max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .rts__slider__control .slider__btn {
-    height: 43px;
-    width: 40px;
-    background-color: var(--rts-white);
-    border-radius: 6px;
-    display: grid;
-    place-items: center;
-    font-size: 14px;
-    transition: var(--transition);
-}
+  height: 43px;
+  width: 40px;
+  background-color: var(--rts-white);
+  border-radius: 6px;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  transition: var(--transition);
+}/*# sourceMappingURL=brows-job-category.css.map */

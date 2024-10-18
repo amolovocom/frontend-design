@@ -1,0 +1,135 @@
+.row-30 {
+    row-gap: 30px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.search__item {
+
+    input {
+        padding: 15px 20px;
+        padding-left: 45px;
+        border-radius: 4px;
+        border: 0;
+        position: relative;
+        width: 100%;
+    }
+
+    i {
+        position: absolute;
+        left: 20px;
+        transform: translateY(-50%);
+        color: var(--rts-heading);
+        margin-top: 26px;
+        font-size: 16px;
+    }
+
+    .nice-select {
+        width: 100%;
+        padding: 6px 20px;
+        padding-left: 45px;
+        height: 52px;
+        font-size: inherit;
+        position: relative;
+        border: 0;
+    }
+}
+
+
+.job__search__section {
+    padding: 30px;
+    background: linear-gradient(228.26deg, #FEF2EB 0%, #F1F1F1 46.25%, #E4E0EA 99.86%);
+    border-radius: 10px;
+}
+
+.search__item__list .list {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(125, 128, 135, 0.3);
+}
+
+.checkbox {
+
+    input {
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer;
+    }
+
+    label {
+        position: relative;
+        cursor: pointer;
+        font-size: 16px;
+        text-transform: capitalize;
+        color: var(--rts-heading);
+        font-weight: 500;
+
+        &:before {
+            content: "";
+            background-color: transparent;
+            border: 1px solid var(--rts-button-1);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+            padding: 6px;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            cursor: pointer;
+            border-radius: 2px;
+            margin-right: 10px;
+            top: -2px;
+        }
+
+    }
+}
+
+.search__item__list .list:not(:first-child) {
+    padding-top: 10px;
+}
+
+.search__item__list .list:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.job__search__btn {
+    padding: 10px;
+    color: var(--rts-heading);
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.row-35 {
+    row-gap: 35px;
+}
+
+.search__item.no-icon .nice-select {
+    padding-left: 20px;
+}
+
+
+.search__item__list span {
+    font-size: 16px;
+}
+
+.checkbox input:checked+label::before {
+    background-color: var(--rts-button-1);
+    border-radius: 2px;
+}
+
+.checkbox input:checked+label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--rts-white);
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+}

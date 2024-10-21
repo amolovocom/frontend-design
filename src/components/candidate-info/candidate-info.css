@@ -5,6 +5,8 @@
 }
 .rts__job__details .timeline {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .rts__job__details .timeline li {
   position: relative;

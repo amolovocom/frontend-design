@@ -5,6 +5,24 @@
   position: relative;
   transition: var(--transition);
 
+  &:hover {
+    border-color: transparent;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  &:hover .company__icon {
+    background-color: var(--rts-white);
+  }
+
+  &:hover .featured__option span {
+    background-color: var(--rts-white);
+  }
+  
+  
+
   .company__icon {
     height: 60px;
     width: 60px;

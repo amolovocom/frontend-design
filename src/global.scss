@@ -253,27 +253,6 @@ h6 {
   transition: var(--transition);
 }
 
-.rts__job__card:hover {
-  border-color: transparent;
-}
-
-.rts__job__card:hover::before {
-  opacity: 1;
-}
-
-.rts__job__card:hover .company__icon {
-  background-color: var(--rts-white);
-}
-
-.rts__job__card .job__tags a:hover {
-  color: var(--rts-white);
-  background-color: var(--rts-button-1);
-}
-
-.rts__job__card:hover .featured__option span {
-  background-color: var(--rts-white);
-}
-
 .rts__job__card__list.style__gradient::before,
 .style__gradient__two.rts__author__card__big::before {
   position: absolute;

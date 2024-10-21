@@ -14,6 +14,16 @@
   background-color: var(--rts-gray);
   transition: var(--transition);
 }
+.rts__job__card .featured__option span {
+  background-color: var(--rts-gray);
+  border-radius: 6px;
+  padding: 10px;
+  line-height: 1;
+  font-size: 16px;
+  display: block;
+  transition: var(--transition);
+  color: var(--rts-button-1);
+}
 .rts__job__card .job__title {
   font-size: var(--h6);
   line-height: 30px;

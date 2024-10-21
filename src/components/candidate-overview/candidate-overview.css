@@ -3,6 +3,32 @@
   padding: 30px;
   border-radius: 10px;
 }
+.job__overview .job__overview__content ul {
+  padding: 0;
+}
+.job__overview .job__overview__content ul li {
+  padding-bottom: 15px;
+  margin-top: 15px;
+  border-bottom: 1px solid rgba(125, 128, 135, 0.2);
+}
+.job__overview .job__overview__content ul li:last-child {
+  border-bottom: none;
+}
+.job__overview .job__overview__content ul li .left-text {
+  color: var(--rts-heading);
+  font-weight: 500;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.job__overview .job__overview__content ul li .left-text i {
+  color: var(--rts-primary);
+  font-size: 20px;
+}
+.job__overview .job__overview__content ul li .text {
+  font-weight: 400;
+  font-size: 16px;
+}
 
 .gap-40 {
   gap: 40px;
@@ -13,63 +39,16 @@
   padding: 30px;
   border-radius: 10px;
 }
-
-.job__overview h6, .job__contact h6 {
-  font-size: var(--h6);
-  line-height: 30px;
-  color: var(--rts-heading);
-  font-weight: 700;
+.job__contact .search__item {
+  position: relative;
 }
-
-.job__overview__content ul {
-  padding: 0;
-}
-
-.job__overview__content li {
-  padding-bottom: 15px;
-  margin-top: 15px;
-  border-bottom: 1px solid rgba(125, 128, 135, 0.2);
-}
-
-.job__overview__content li:last-child {
-  border-bottom: none;
-}
-
-.job__overview__content .left-text {
-  color: var(--rts-heading);
-  font-weight: 500;
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-
-.job__overview__content .text {
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.job__overview__content .left-text i {
-  color: var(--rts-primary);
-  font-size: 20px;
-}
-
-.rts__social a:hover {
-  color: var(--rts-primary);
-}
-
 .job__contact .search__item label {
   line-height: 1;
 }
-
 .job__contact .search__item i {
   color: #939393;
   font-size: 17px;
 }
-
-.search__item {
-  position: relative;
-}
-
 .job__contact .search__item textarea {
   height: 105px;
   width: 100%;
@@ -78,6 +57,13 @@
   padding: 15px 20px;
   padding-left: 45px;
   line-height: 1;
+}
+
+.job__overview h6, .job__contact h6 {
+  font-size: var(--h6);
+  line-height: 30px;
+  color: var(--rts-heading);
+  font-weight: 700;
 }
 
 .apply__btn {

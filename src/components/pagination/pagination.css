@@ -1,22 +1,9 @@
-.pt-60 {
-  padding-top: 60px;
-}
-
 .rts__pagination ul {
   margin: 0;
   padding: 0;
-}
-
-ul {
   list-style: none;
 }
-
-.max-content {
-  max-width: -moz-max-content;
-  max-width: max-content;
-}
-
-.rts__pagination li a {
+.rts__pagination ul li a {
   height: 48px;
   width: 48px;
   border-radius: 6px;
@@ -29,8 +16,20 @@ ul {
   transition: var(--transition);
   text-decoration: none;
 }
-
-.rts__pagination li a.inactive::before {
+.rts__pagination ul li a:hover {
+  border-color: var(--rts-button-1);
+  background-color: var(--rts-button-1);
+  color: var(--rts-white);
+}
+.rts__pagination ul li .inactive {
+  border: none;
+}
+.rts__pagination ul li .inactive:hover {
+  color: var(--rts-heading);
+  cursor: not-allowed;
+  border: none;
+}
+.rts__pagination ul li .inactive:before {
   content: "";
   position: absolute;
   height: 100%;
@@ -42,18 +41,7 @@ ul {
   border-radius: 6px;
 }
 
-.rts__pagination li a:hover {
-  border-color: var(--rts-button-1);
-  background-color: var(--rts-button-1);
-  color: var(--rts-white);
-}
-
-.rts__pagination li a.inactive {
-  border: none;
-}
-
-.rts__pagination li a.inactive:hover {
-  color: var(--rts-heading);
-  cursor: not-allowed;
-  border: none;
+.max-content {
+  max-width: -moz-max-content;
+  max-width: max-content;
 }/*# sourceMappingURL=pagination.css.map */

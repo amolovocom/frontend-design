@@ -1,21 +1,9 @@
-.author__icon img {
+.breadcrumb__area .rts__job__card__big .author__icon img {
   height: 122px;
   min-width: 122px;
   border-radius: 10px;
 }
-
-h3, .h3 {
-  font-size: var(--h3);
-  line-height: 58px;
-  color: var(--rts-heading);
-  font-weight: 700;
-}
-
 .breadcrumb__area .rts__job__card__big .job__tags a {
-  background-color: var(--rts-white);
-}
-
-.rts__job__card__big .job__tags a {
   padding: 5px 14px;
   border-radius: 6px;
   background-color: transparent;
@@ -27,34 +15,39 @@ h3, .h3 {
   font-weight: 500;
   font-size: 16px;
 }
-
+.breadcrumb__area .rts__job__card__big .job__tags a:hover {
+  color: var(--rts-white);
+  background-color: var(--rts-button-3);
+}
 .breadcrumb__area .breadcrumb__apply {
   position: absolute;
   right: 0;
   top: 52%;
 }
-
-.breadcrumb__area .apply__btn.no__fill__btn {
-  color: var(--rts-heading);
-  background-color: transparent;
-}
-
-.breadcrumb__area .apply__btn {
-  color: var(--rts-white);
+.breadcrumb__area .breadcrumb__apply .apply__btn {
   font-weight: 500;
   padding: 20px 30px;
   position: relative;
   z-index: 1;
   border-radius: 6px;
 }
-
-.breadcrumb__area .rts__job__card__big .job__tags a:hover {
-  color: var(--rts-white);
-  background-color: var(--rts-button-3);
+.breadcrumb__area .breadcrumb__apply .apply__btn .no__fill__btn {
+  color: var(--rts-heading);
+  background-color: transparent;
 }
-
-.breadcrumb__area .apply__btn.no__fill__btn:hover {
+.breadcrumb__area .breadcrumb__apply .apply__btn .no__fill__btn:hover {
   color: var(--rts-white);
   background-color: var(--rts-button-1);
   border-color: var(--rts-button-1);
+}
+
+h3, .h3 {
+  font-size: var(--h3);
+  line-height: 58px;
+  color: var(--rts-heading);
+  font-weight: 700;
+}
+
+.breadcrumb__area .rts__job__card__big .job__tags a {
+  background-color: var(--rts-white);
 }/*# sourceMappingURL=candidate-background.css.map */
